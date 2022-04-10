@@ -1,0 +1,61 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local VRXHub = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Admin = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Main.Position = UDim2.new(0.606186628, 0, 0.557055175, 0)
+Main.Size = UDim2.new(0, 542, 0, 288)
+Main.Active = true
+Main.Draggable = true
+
+VRXHub.Name = "VRX Hub"
+VRXHub.Parent = Main
+VRXHub.Active = true
+VRXHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VRXHub.BackgroundTransparency = 0.900
+VRXHub.Position = UDim2.new(0.832692325, 0, 0.027777778, 0)
+VRXHub.Size = UDim2.new(0, 79, 0, 36)
+VRXHub.Font = Enum.Font.SourceSans
+VRXHub.Text = "VXR HUB"
+VRXHub.TextColor3 = Color3.fromRGB(94, 117, 59)
+VRXHub.TextSize = 23.000
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.Active = true
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 0.900
+Credits.Position = UDim2.new(0.551923096, 0, 0.027777778, 0)
+Credits.Size = UDim2.new(0, 139, 0, 36)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made By DadIsEpic#6969"
+Credits.TextColor3 = Color3.fromRGB(94, 117, 59)
+Credits.TextSize = 14.000
+
+Admin.Name = "Admin"
+Admin.Parent = Main
+Admin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Admin.BackgroundTransparency = 0.900
+Admin.Position = UDim2.new(0.832692266, 0, 0.180555552, 0)
+Admin.Size = UDim2.new(0, 78, 0, 50)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(94, 117, 59)
+Admin.TextSize = 14.000
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
