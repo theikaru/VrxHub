@@ -7,9 +7,12 @@ local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local VRXHub = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
-local Admin = Instance.new("TextButton")
+local InfYeild = Instance.new("TextButton")
 local DaHoodScript = Instance.new("TextButton")
 local ArsenalScipt = Instance.new("TextButton")
+local ShindoLife = Instance.new("TextButton")
+local NinjaTycoon = Instance.new("TextButton")
+local BeeSwarm = Instance.new("TextButton")
 
 --Properties:
 
@@ -23,7 +26,6 @@ Main.Position = UDim2.new(0.606186628, 0, 0.557055175, 0)
 Main.Size = UDim2.new(0, 542, 0, 288)
 Main.Active = true
 Main.Draggable = true
-
 
 VRXHub.Name = "VRX Hub"
 VRXHub.Parent = Main
@@ -49,17 +51,17 @@ Credits.Text = "Made By DadIsEpic#6969"
 Credits.TextColor3 = Color3.fromRGB(94, 117, 59)
 Credits.TextSize = 14.000
 
-Admin.Name = "Admin"
-Admin.Parent = Main
-Admin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Admin.BackgroundTransparency = 0.900
-Admin.Position = UDim2.new(0.832692266, 0, 0.180555552, 0)
-Admin.Size = UDim2.new(0, 78, 0, 50)
-Admin.Font = Enum.Font.SourceSans
-Admin.Text = "Admin"
-Admin.TextColor3 = Color3.fromRGB(94, 117, 59)
-Admin.TextSize = 14.000
-Admin.MouseButton1Down:connect(function()
+InfYeild.Name = "Inf Yeild"
+InfYeild.Parent = Main
+InfYeild.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfYeild.BackgroundTransparency = 0.900
+InfYeild.Position = UDim2.new(0.832692266, 0, 0.180555552, 0)
+InfYeild.Size = UDim2.new(0, 78, 0, 50)
+InfYeild.Font = Enum.Font.SourceSans
+InfYeild.Text = "Inf Yeild"
+InfYeild.TextColor3 = Color3.fromRGB(94, 117, 59)
+InfYeild.TextSize = 14.000
+InfYeild.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
@@ -89,4 +91,46 @@ ArsenalScipt.TextColor3 = Color3.fromRGB(94, 117, 59)
 ArsenalScipt.TextSize = 14.000
 ArsenalScipt.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+ShindoLife.Name = "Shindo Life"
+ShindoLife.Parent = Main
+ShindoLife.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShindoLife.BackgroundTransparency = 0.900
+ShindoLife.Position = UDim2.new(0.650035441, 0, 0.413194448, 0)
+ShindoLife.Size = UDim2.new(0, 78, 0, 50)
+ShindoLife.Font = Enum.Font.SourceSans
+ShindoLife.Text = "Shindo Life"
+ShindoLife.TextColor3 = Color3.fromRGB(94, 117, 59)
+ShindoLife.TextSize = 14.000
+ShindoLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Web/main/scripts/SnxwHub.txt"))()
+end)
+
+NinjaTycoon.Name = "Ninja Tycoon"
+NinjaTycoon.Parent = Main
+NinjaTycoon.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NinjaTycoon.BackgroundTransparency = 0.900
+NinjaTycoon.Position = UDim2.new(0.465533614, 0, 0.180555552, 0)
+NinjaTycoon.Size = UDim2.new(0, 78, 0, 50)
+NinjaTycoon.Font = Enum.Font.SourceSans
+NinjaTycoon.Text = "Ninja Tycoon"
+NinjaTycoon.TextColor3 = Color3.fromRGB(94, 117, 59)
+NinjaTycoon.TextSize = 14.000
+NinjaTycoon.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+end)
+
+BeeSwarm.Name = "BeeSwarm"
+BeeSwarm.Parent = Main
+BeeSwarm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BeeSwarm.BackgroundTransparency = 0.900
+BeeSwarm.Position = UDim2.new(0.465533614, 0, 0.413194448, 0)
+BeeSwarm.Size = UDim2.new(0, 78, 0, 50)
+BeeSwarm.Font = Enum.Font.SourceSans
+BeeSwarm.Text = "Bee Swarm Sim"
+BeeSwarm.TextColor3 = Color3.fromRGB(94, 117, 59)
+BeeSwarm.TextSize = 14.000
+BeeSwarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
 end)
