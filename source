@@ -1,1 +1,136 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theikaru/VrxHub/main/source"))()
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local VRXHub = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local InfYeild = Instance.new("TextButton")
+local DaHoodScript = Instance.new("TextButton")
+local ArsenalScipt = Instance.new("TextButton")
+local ShindoLife = Instance.new("TextButton")
+local NinjaTycoon = Instance.new("TextButton")
+local BeeSwarm = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Main.Position = UDim2.new(0.606186628, 0, 0.557055175, 0)
+Main.Size = UDim2.new(0, 542, 0, 288)
+Main.Active = true
+Main.Draggable = true
+
+VRXHub.Name = "VRX Hub"
+VRXHub.Parent = Main
+VRXHub.Active = true
+VRXHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VRXHub.BackgroundTransparency = 0.900
+VRXHub.Position = UDim2.new(0.832692325, 0, 0.027777778, 0)
+VRXHub.Size = UDim2.new(0, 79, 0, 36)
+VRXHub.Font = Enum.Font.SourceSans
+VRXHub.Text = "VXR HUB"
+VRXHub.TextColor3 = Color3.fromRGB(94, 117, 59)
+VRXHub.TextSize = 23.000
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.Active = true
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 0.900
+Credits.Position = UDim2.new(0.551923096, 0, 0.027777778, 0)
+Credits.Size = UDim2.new(0, 139, 0, 36)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made By DadIsEpic#6969"
+Credits.TextColor3 = Color3.fromRGB(94, 117, 59)
+Credits.TextSize = 14.000
+
+InfYeild.Name = "Inf Yeild"
+InfYeild.Parent = Main
+InfYeild.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfYeild.BackgroundTransparency = 0.900
+InfYeild.Position = UDim2.new(0.832692266, 0, 0.180555552, 0)
+InfYeild.Size = UDim2.new(0, 78, 0, 50)
+InfYeild.Font = Enum.Font.SourceSans
+InfYeild.Text = "Inf Yeild"
+InfYeild.TextColor3 = Color3.fromRGB(94, 117, 59)
+InfYeild.TextSize = 14.000
+InfYeild.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+DaHoodScript.Name = "DaHood Script"
+DaHoodScript.Parent = Main
+DaHoodScript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DaHoodScript.BackgroundTransparency = 0.900
+DaHoodScript.Position = UDim2.new(0.834537268, 0, 0.413194448, 0)
+DaHoodScript.Size = UDim2.new(0, 78, 0, 50)
+DaHoodScript.Font = Enum.Font.SourceSans
+DaHoodScript.Text = "Dahood Script"
+DaHoodScript.TextColor3 = Color3.fromRGB(94, 117, 59)
+DaHoodScript.TextSize = 14.000
+DaHoodScript.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Impulseonyoutube/scripts/main/dahood"))()
+end)
+
+ArsenalScipt.Name = "Arsenal Scipt"
+ArsenalScipt.Parent = Main
+ArsenalScipt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ArsenalScipt.BackgroundTransparency = 0.900
+ArsenalScipt.Position = UDim2.new(0.650035441, 0, 0.180555552, 0)
+ArsenalScipt.Size = UDim2.new(0, 78, 0, 50)
+ArsenalScipt.Font = Enum.Font.SourceSans
+ArsenalScipt.Text = "Arsenal Script"
+ArsenalScipt.TextColor3 = Color3.fromRGB(94, 117, 59)
+ArsenalScipt.TextSize = 14.000
+ArsenalScipt.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+ShindoLife.Name = "Shindo Life"
+ShindoLife.Parent = Main
+ShindoLife.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShindoLife.BackgroundTransparency = 0.900
+ShindoLife.Position = UDim2.new(0.650035441, 0, 0.413194448, 0)
+ShindoLife.Size = UDim2.new(0, 78, 0, 50)
+ShindoLife.Font = Enum.Font.SourceSans
+ShindoLife.Text = "Shindo Life"
+ShindoLife.TextColor3 = Color3.fromRGB(94, 117, 59)
+ShindoLife.TextSize = 14.000
+ShindoLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Web/main/scripts/SnxwHub.txt"))()
+end)
+
+NinjaTycoon.Name = "Ninja Tycoon"
+NinjaTycoon.Parent = Main
+NinjaTycoon.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NinjaTycoon.BackgroundTransparency = 0.900
+NinjaTycoon.Position = UDim2.new(0.465533614, 0, 0.180555552, 0)
+NinjaTycoon.Size = UDim2.new(0, 78, 0, 50)
+NinjaTycoon.Font = Enum.Font.SourceSans
+NinjaTycoon.Text = "Ninja Tycoon"
+NinjaTycoon.TextColor3 = Color3.fromRGB(94, 117, 59)
+NinjaTycoon.TextSize = 14.000
+NinjaTycoon.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+end)
+
+BeeSwarm.Name = "BeeSwarm"
+BeeSwarm.Parent = Main
+BeeSwarm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BeeSwarm.BackgroundTransparency = 0.900
+BeeSwarm.Position = UDim2.new(0.465533614, 0, 0.413194448, 0)
+BeeSwarm.Size = UDim2.new(0, 78, 0, 50)
+BeeSwarm.Font = Enum.Font.SourceSans
+BeeSwarm.Text = "Bee Swarm Sim"
+BeeSwarm.TextColor3 = Color3.fromRGB(94, 117, 59)
+BeeSwarm.TextSize = 14.000
+BeeSwarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/kocmoc-remastered.lua"))()
+end)
