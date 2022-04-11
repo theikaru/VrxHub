@@ -132,5 +132,5 @@ BeeSwarm.Text = "Bee Swarm Sim"
 BeeSwarm.TextColor3 = Color3.fromRGB(94, 117, 59)
 BeeSwarm.TextSize = 14.000
 BeeSwarm.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/kocmoc-remastered.lua"))()
 end)
